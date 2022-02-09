@@ -11,8 +11,7 @@ class Calculator extends React.Component {
     return (
       <div className="calculator-grid">
         <div className="output">
-          <div className="previous-operand" />
-          <div className="current-operand">0</div>
+          0
         </div>
         <div className="row">
           <span className="button">AC</span>

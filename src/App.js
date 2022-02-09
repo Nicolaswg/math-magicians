@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import Wrapper from './components/Calculator';
+import Calculator from './components/Calculator';
 
 class App extends React.Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Wrapper />
+        <Calculator />
       </div>
     );
   }

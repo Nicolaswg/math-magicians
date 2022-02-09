@@ -15,19 +15,14 @@
 .output {
   height: 60px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 5px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
   background-color: rgb(126, 126, 126);
-  row-gap: 5px;
   flex: 0 1 100%;
   border: 1px solid black;
   color: #fff;
-}
-
-.current-operand {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .row {

@@ -6,7 +6,7 @@ class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      total: null,
+      total: '0',
       next: null,
       operation: null,
     };
@@ -19,6 +19,28 @@ class Calculator extends React.Component {
 
   render() {
     const { total, next, operation } = this.state;
+    const values = [
+      'AC',
+      '+/-',
+      '%',
+      '÷',
+      '7',
+      '8',
+      '9',
+      'x',
+      '4',
+      '5',
+      '6',
+      '-',
+      '1',
+      '2',
+      '3',
+      '+',
+      '0',
+      '.',
+      '=',
+    ];
+
     return (
       <div className="calculator-grid">
         <div className="output">
@@ -27,25 +49,16 @@ class Calculator extends React.Component {
           {next || ''}
         </div>
         <div className="row">
-          <button type="button" className="button" onClick={this.handleClick}>AC</button>
-          <button type="button" className="button" onClick={this.handleClick}>+/-</button>
-          <button type="button" className="button" onClick={this.handleClick}>%</button>
-          <button type="button" className="button" onClick={this.handleClick}>÷</button>
-          <button type="button" className="button" onClick={this.handleClick}>7</button>
-          <button type="button" className="button" onClick={this.handleClick}>8</button>
-          <button type="button" className="button" onClick={this.handleClick}>9</button>
-          <button type="button" className="button" onClick={this.handleClick}>x</button>
-          <button type="button" className="button" onClick={this.handleClick}>4</button>
-          <button type="button" className="button" onClick={this.handleClick}>5</button>
-          <button type="button" className="button" onClick={this.handleClick}>6</button>
-          <button type="button" className="button" onClick={this.handleClick}>-</button>
-          <button type="button" className="button" onClick={this.handleClick}>1</button>
-          <button type="button" className="button" onClick={this.handleClick}>2</button>
-          <button type="button" className="button" onClick={this.handleClick}>3</button>
-          <button type="button" className="button" onClick={this.handleClick}>+</button>
-          <button type="button" className="button span-2" onClick={this.handleClick}>0</button>
-          <button type="button" className="button" onClick={this.handleClick}>.</button>
-          <button type="button" className="button" onClick={this.handleClick}>=</button>
+          {values.map((e) => {
+            if (e === '0') {
+              return (
+                <button type="button" className="button span-2" key={e} onClick={this.handleClick}>{e}</button>
+              );
+            }
+            return (
+              <button type="button" className="button" key={e} onClick={this.handleClick}>{e}</button>
+            );
+          })}
         </div>
       </div>
     );

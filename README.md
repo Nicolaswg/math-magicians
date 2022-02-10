@@ -16,6 +16,10 @@
 
 ## Set up project
 
+
+https://user-images.githubusercontent.com/73354132/153303167-9ef65b55-7e78-4af5-9c76-e3ec69909af6.mp4
+
+
 > For testing out this project, you should follow the next simple steps:
 
 1.`clone repo` copy this link  https://github.com/Nicolaswg/math-magicians.git in to your local machine

@@ -1,6 +1,7 @@
 import './Calculator.css';
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
+import Buttons from './CalButton';
 
 const Calculator = () => {
   const [data, setData] = useState(
@@ -16,27 +17,6 @@ const Calculator = () => {
   };
 
   const { total, next, operation } = data;
-  const values = [
-    'AC',
-    '+/-',
-    '%',
-    '÷',
-    '7',
-    '8',
-    '9',
-    'x',
-    '4',
-    '5',
-    '6',
-    '-',
-    '1',
-    '2',
-    '3',
-    '+',
-    '0',
-    '.',
-    '=',
-  ];
 
   return (
     <div className="calculator-grid">
@@ -47,18 +27,7 @@ const Calculator = () => {
 
         {next || ''}
       </div>
-      <div className="row">
-        {values.map((e) => {
-          if (e === '0') {
-            return (
-              <button type="button" className="button span-2" key={e} onClick={handleClick}>{e}</button>
-            );
-          }
-          return (
-            <button type="button" className="button" key={e} onClick={handleClick}>{e}</button>
-          );
-        })}
-      </div>
+      <Buttons click={handleClick} />
     </div>
   );
 };

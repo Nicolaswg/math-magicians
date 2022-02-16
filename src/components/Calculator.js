@@ -19,16 +19,19 @@ const Calculator = () => {
   const { total, next, operation } = data;
 
   return (
-    <div className="calculator-grid">
-      <div className="output">
-        {total || ''}
+    <>
+      <h2 className="subtitle">Lest do some Math</h2>
+      <div className="calculator-grid">
+        <div className="output">
+          {total || ''}
 
-        {operation || ''}
+          {operation || ''}
 
-        {next || ''}
+          {next || ''}
+        </div>
+        <Buttons click={handleClick} />
       </div>
-      <Buttons click={handleClick} />
-    </div>
+    </>
   );
 };
 export default Calculator;

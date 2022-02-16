@@ -1,21 +1,22 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
 import styles from './Navbar.module.css';
 
 function Navbar() {
   const links = [
     {
-      id: 1,
+      id: uuidv4(),
       path: '/',
       text: 'Home',
     },
     {
-      id: 2,
+      id: uuidv4(),
       path: '/calculator',
       text: 'Calculator',
     },
     {
-      id: 3,
+      id: uuidv4(),
       path: '/qoute',
       text: 'Qoute',
     },

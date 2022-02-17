@@ -23,7 +23,7 @@ function Navbar() {
   ];
   return (
     <>
-      <div className={styles.headerContainer}>
+      <div data-testid="navbar" className={styles.headerContainer}>
         <div className={styles.headerTitle}>
           <h1>Math Magicians</h1>
         </div>

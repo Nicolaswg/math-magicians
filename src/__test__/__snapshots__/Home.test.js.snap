@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Home correctly 1`] = `
+<div
+  className="homeContainer"
+>
+  <h2
+    className="title"
+  >
+     Welcome to our page!
+  </h2>
+  <div>
+    <p
+      className="content"
+    >
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum ut molestiae animi itaque esse nulla veritatis sed earum officiis Lorem ipsum, dolor sit amet consectetur animi itaque esse nulla veritatis sed adipisicing elit. Dolorum ut molestiae animi adipisicing elit. Dolorum ut molestiae animi adipisicing elit. Dolorum ut molestiae animi adipisicing elit. Dolorum ut molestiae animi earum officiis culpa! Mollitia
+    </p>
+  </div>
+</div>
+`;

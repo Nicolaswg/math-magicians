@@ -18,3 +18,22 @@ exports[`Render Home correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`Render Quote correctly 1`] = `
+<div
+  className="homeContainer"
+>
+  <h2
+    className="title"
+  >
+     Welcome to our page!
+  </h2>
+  <div>
+    <p
+      className="content"
+    >
+      Mathematics is not about number, equations, computations, or algorithms: it is about understanding. -Willian Paul Thurston
+    </p>
+  </div>
+</div>
+`;

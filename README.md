@@ -12,8 +12,8 @@
 - Git/Gitflow
 
 ## Live Demo
-[live page]()
-
+[Heroku live page](https://magic-cal.herokuapp.com/)
+[Netlify live page](https://magic-calcu.netlify.app/)
 ## Set up project
 
 
